@@ -1,0 +1,47 @@
+{
+  "name": "souschef",
+  "version": "1.0.0",
+  "description": "Google Assistant that aids with cooking",
+  "main": "app.js",
+  "scripts": {
+    "compile": "babel -d dst/ src/",
+    "test": "npm run compile && mocha --no-colors --compilers js:babel-core/register --exit",
+    "start": "babel-node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trevorforrey/SousChef.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trevorforrey/SousChef/issues"
+  },
+  "homepage": "https://github.com/trevorforrey/SousChef#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "cjson": "^0.5.0",
+    "bcryptjs": "^2.4.3",
+    "convert-units": "^2.3.4",
+    "dialogflow": "^0.6.0",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.0",
+    "json-parse-helpfulerror": "^1.0.3",
+    "mongodb": "^3.1.6",
+    "passport": "^0.4.0",
+    "path": "^0.12.7",
+    "shelljs": "^0.8.2",
+    "unirest": "^0.5.1"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "mocha": "^5.2.0",
+    "regenerator-runtime": "^0.12.1"
+  }
+}
